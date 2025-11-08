@@ -1,0 +1,52 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ---- Virtual envs ----
+.venv/
+venv/
+env/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Environment / secrets ----
+.env
+
+# ---- Data & artifacts ----
+# Keep repo light; raw & processed can be re-downloaded or rebuilt
+data/processed/artifacts/
+data/intermediate/
+data/predictions.db
+*.db
+
+# If you want to exclude big CSVs, uncomment:
+# data/raw/*.csv
+# data/processed/*.csv
+
+# ---- Models ----
+model/*.pkl
+model/*.joblib
+
+# ---- Logs ----
+*.log
+
+# ---- Docker / misc ----
+docker-data/
